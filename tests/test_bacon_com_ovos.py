@@ -10,6 +10,19 @@ Parte 2 - Criar o código e ver o teste passar
 Refactor
 Parte 3 - Melhorar meu código
 """
+try:
+    import os
+    import sys
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__), '../src'
+            )
+        )
+    )
+except:
+    raise
 import unittest
 
 from bacon_com_ovos import bacon_com_ovos
